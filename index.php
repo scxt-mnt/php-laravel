@@ -11,10 +11,16 @@
 </body>
 
     <?php
-        echo "hello world";
 
-        $greet = "hello world" ;
-        echo $greet;
+
+
+        const greetings = "hello world";
+        echo greetings;
+
+        $x = 0;
+        $calcu = $x++ + 1;
+        echo $calcu;
+
     ?>
 
 </html>
