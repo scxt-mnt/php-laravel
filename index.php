@@ -19,7 +19,7 @@
 $greetings = <<<start
 asdasdasdasd
 asdasdasd
-asdasd
+asdasd <br/>
 start;
 
 
@@ -31,9 +31,20 @@ echo $calcu;
 
 
 
-$str1 = "hello";
-$str2 = "world";
-echo $str1 . $str2;
+$str1 = "hello ";
+$str2 = "world <br/>";
+echo $str1 . $str2 ;
+
+
+$cars = ["volvo", "toyota"];
+
+
+array_push($cars, "hello");
+
+$count = count($cars);
+
+echo $cars[$count - 1];
+
 ?>
 
 </html>
