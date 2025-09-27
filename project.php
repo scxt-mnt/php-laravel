@@ -1,40 +1,10 @@
 
 <?php
 
+$fetch = curl_init("https://jsonplaceholder.typicode.com/todos/2");
+curl_setopt($fetch, CURLOPT_RETURNTRANSFER,true);
+$data = curl_exec($fetch);
+curl_close($fetch);
 
-
-
-$greetings = <<<start
-asdasdasdasd
-asdasdasd
-asdasd <br/>
-start;
-
-
-echo $greetings;
-
-$x = 0;
-$calcu = $x++ + 1;
-echo $calcu;
-
-
-
-$str1 = "hello ";
-$str2 = "world <br/>";
-echo $str1 . $str2 ;
-
-
-$cars = ["volvo", "toyota"];
-
-
-array_push($cars, "hello");
-
-$count = count($cars);
-
-echo "{$cars[$count - 1]} <br>";
-
-foreach($cars as $key => $car){
-    echo "$car = $key <br/>";
-}
-
+echo $data;
 ?>
